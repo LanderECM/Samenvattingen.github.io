@@ -41,7 +41,7 @@
         // if the user released on a different target, cancel!
         if (startEl !== e.target) return;
 
-        var swipeThreshold = parseInt(startEl.getAttribute('data-swipe-threshold') || '100', 10);    // default 10px
+        var swipeThreshold = parseInt(startEl.getAttribute('data-swipe-threshold') || '75', 10);    // default 10px
         var swipeTimeout = parseInt(startEl.getAttribute('data-swipe-timeout') || '500', 10);      // default 1000ms
         var timeDiff = Date.now() - timeDown;
         var eventType = '';
